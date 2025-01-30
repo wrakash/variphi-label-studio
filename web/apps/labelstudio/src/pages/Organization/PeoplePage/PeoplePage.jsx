@@ -146,11 +146,12 @@ export const PeoplePage = () => {
           onSelect={(user) => selectUser(user)}
         />
 
-        {selectedUser ? (
+        
+        {selectedUser && (
           <SelectedUser user={selectedUser} onClose={() => selectUser(null)} />
-        ) : (
-          isFF(FF_LSDV_E_297) && <HeidiTips collection="organizationPage" />
-        )}
+        // ) : (
+        //   isFF(FF_LSDV_E_297) && <HeidiTips collection="organizationPage" />
+         )}
       </Elem>
     </Block>
   );

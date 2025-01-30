@@ -43,12 +43,14 @@ export const VersionProvider = ({ children }) => {
 };
 
 export const VersionNotifier = ({ showNewVersion, showCurrentVersion }) => {
-  const { newVersion, updateTime, latestVersion, version } = useContext(VersionContext) ?? {};
-  const url = `https://labelstud.io/redirect/update?version=${version}`;
+  const { newVersion, updateTime, latestVersion } = useContext(VersionContext) ?? {};
+
+  const version = '1.0.1'
+  //const url = `https://labelstud.io/redirect/update?version=${version}`;
 
   return newVersion && showNewVersion ? (
     <Block tag="li" name="version-notifier">
-      <a href={url} target="_blank" rel="noreferrer">
+      {/* <a href={url} target="_blank" rel="noreferrer"> */}
         <Elem name="icon">
           <IconBell />
         </Elem>
@@ -58,7 +60,7 @@ export const VersionNotifier = ({ showNewVersion, showCurrentVersion }) => {
           </Elem>
           <Elem name="description">Current version: {version}</Elem>
         </Elem>
-      </a>
+      {/* </a> */}
     </Block>
   ) : version && showCurrentVersion ? (
     <Block tag={Link} name="current-version" to="/version" target="_blank">
