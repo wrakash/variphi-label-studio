@@ -47,7 +47,6 @@ class LocalFilesMixin(models.Model):
             raise ValidationError(
                 "Serving local files can be dangerous, so it's disabled by default. "
                 'You can enable it with LOCAL_FILES_SERVING_ENABLED environment variable, '
-                'please check docs: https://labelstud.io/guide/storage.html#Local-storage'
             )
 
 

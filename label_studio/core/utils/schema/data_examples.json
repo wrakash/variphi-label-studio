@@ -99,7 +99,7 @@
   "upload": {
     "TextRaw": "Sample: Your text will go here.",
     "TextUrl": "https://htx-pub.s3.amazonaws.com/example.txt",
-    "HyperText": "<a href='https://labelstud.io'>Label Studio</a>",
+    "HyperText": "",
     "Image": "<HOSTNAME>/static/samples/sample.jpg",
     "Audio": "<HOSTNAME>/static/samples/game.wav",
     "AudioPlus": "<HOSTNAME>/static/samples/game.wav",
@@ -120,7 +120,7 @@
     "Video": "<HOSTNAME>/static/samples/opossum_snow.mp4",
     "$longText": "Sample: This is a sample text for long text task. It can be used for text classification, named entity recognition, etc.",
     "$pdf": "<embed src='<HOSTNAME>/static/samples/sample.pdf' width='100%' height='600px'/>",
-    "$website": "<iframe src='https://labelstud.io' width='100%' height='600px'/>",
+    "$website": "",
     "$headlessCsv": "<HOSTNAME>/static/samples/sample-task-sin-headless.csv"
   }
 }

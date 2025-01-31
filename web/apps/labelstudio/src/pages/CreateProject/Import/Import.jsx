@@ -76,13 +76,13 @@ const Footer = () => {
     <Modal.Footer>
       <IconInfo className={importClass.elem("info-icon")} width="20" height="20" />
       See the&nbsp;documentation to{" "}
-      <a target="_blank" href="https://labelstud.io/guide/predictions.html" rel="noreferrer">
+      {/* <a target="_blank" href="https://labelstud.io/guide/predictions.html" rel="noreferrer">
         import preannotated data
       </a>{" "}
       or&nbsp;to{" "}
       <a target="_blank" href="https://labelstud.io/guide/storage.html" rel="noreferrer">
         sync data from a&nbsp;database or&nbsp;cloud storage
-      </a>
+      </a> */}
       .
     </Modal.Footer>
   );
@@ -394,11 +394,11 @@ export const ImportPage = ({
                 <b>
                   * – Support depends on the browser
                   <br />* – Direct media uploads have{" "}
-                  <a href="https://labelstud.io/guide/tasks.html#Import-data-from-the-Label-Studio-UI">limitations</a>{" "}
+                  {/* <a href="https://labelstud.io/guide/tasks.html#Import-data-from-the-Label-Studio-UI">limitations</a>{" "}
                   and we strongly recommend using{" "}
                   <a href="https://labelstud.io/guide/storage.html" target="_blank" rel="noreferrer">
                     Cloud Storage
-                  </a>{" "}
+                  </a>{" "} */}
                   instead
                 </b>
               </div>

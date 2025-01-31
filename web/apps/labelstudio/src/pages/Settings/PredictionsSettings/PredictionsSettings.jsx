@@ -48,9 +48,9 @@ export const PredictionsSettings = () => {
             <Description style={{ marginTop: "1em" }}>
               List of predictions available in the project. Each card is associated with a separate model version. To
               learn about how to import predictions,{" "}
-              <a href="https://labelstud.io/guide/predictions.html" target="_blank" rel="noreferrer">
+              {/* <a href="https://labelstud.io/guide/predictions.html" target="_blank" rel="noreferrer">
                 see&nbsp;the&nbsp;documentation
-              </a>
+              </a> */}
               .
             </Description>
           </Elem>
@@ -65,9 +65,9 @@ export const PredictionsSettings = () => {
               <div>
                 Need help?
                 <br />
-                <a href="https://labelstud.io/guide/predictions" target="_blank" rel="noreferrer">
+                {/* <a href="https://labelstud.io/guide/predictions" target="_blank" rel="noreferrer">
                   Learn more on how to upload predictions in our docs
-                </a>
+                </a> */}
               </div>
             }
           />

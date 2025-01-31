@@ -76,7 +76,7 @@ def any_api_client(request, client_and_token, business_client):
             201,
         ),
         # <Choices> with value attribute but without nested <Choice>
-        # example from https://labelstud.io/templates/serp_ranking
+    
         (
             {
                 'title': '111',

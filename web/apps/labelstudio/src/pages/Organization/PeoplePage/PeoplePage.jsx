@@ -24,7 +24,7 @@ const InvitationModal = ({ link }) => {
       <Description style={{ marginTop: 16 }}>
         Invite people to join your Label Studio instance. People that you invite have full access to all of your
         projects.{" "}
-        <a
+        {/* <a
           href="https://labelstud.io/guide/signup.html"
           target="_blank"
           rel="noreferrer"
@@ -33,7 +33,7 @@ const InvitationModal = ({ link }) => {
           }
         >
           Learn more
-        </a>
+        </a> */}
         .
       </Description>
     </Block>

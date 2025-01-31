@@ -33,7 +33,7 @@ versions = collect_versions()
 open_api_info = openapi.Info(
     title='Variphi Annotation Studio API',
     default_version='v' + versions['release'],
-    contact=openapi.Contact(url='https://labelstud.io'),
+    contact=openapi.Contact(url='variphi.com'),
     x_logo={'url': '../../static/icons/favicon.png'},
 )
 

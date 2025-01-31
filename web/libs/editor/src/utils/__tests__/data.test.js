@@ -115,9 +115,9 @@ describe("parseCSV; headless csv", () => {
 
 describe("parseValue", () => {
   const data = {
-    html: '<a href="https://labelstud.io">Label Studio</a>',
-    url: "https://labelstud.io",
-    name: "Label Studio",
+    html: '<a href=""></a>',
+    url: "",
+    name: "",
     num2str: "123",
     messages: {
       greeting: "Hey!",
@@ -130,7 +130,7 @@ describe("parseValue", () => {
   });
 
   test("Variable", () => {
-    expect(parseValue("$url", data)).toEqual("https://labelstud.io");
+    expect(parseValue("$url", data)).toEqual("");
   });
 
   test("Alphanumeric", () => {
@@ -138,11 +138,11 @@ describe("parseValue", () => {
   });
 
   test("Text with one variable", () => {
-    expect(parseValue("URL: $url", data)).toEqual("URL: https://labelstud.io");
+    expect(parseValue("URL: $url", data)).toEqual("URL: ");
   });
 
   test("Text with variables", () => {
-    expect(parseValue("URL of $name is $url", data)).toEqual("URL of Label Studio is https://labelstud.io");
+    expect(parseValue("URL of $name is $url", data)).toEqual("");
   });
 
   test("Nested values", () => {

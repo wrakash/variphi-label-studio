@@ -202,8 +202,6 @@ class MLBackendDetailAPI(generics.RetrieveUpdateDestroyAPIView):
         operation_description="""
         After you add an ML backend, call this API with the ML backend ID to start training with 
         already-labeled tasks. 
-        
-        Get the ML backend ID by [listing the ML backends for a project](https://labelstud.io/api/#operation/api_ml_list).
         """,
         manual_parameters=[
             openapi.Parameter(
@@ -324,8 +322,7 @@ class MLBackendPredictTestAPI(APIView):
         operation_summary='Request Interactive Annotation',
         operation_description="""
         Send a request to the machine learning backend set up to be used for interactive preannotations to retrieve a
-        predicted region based on annotator input. 
-        See [set up machine learning](https://labelstud.io/guide/ml.html#Get-interactive-preannotations) for more.
+        predicted region based on annotator input.
         """,
         manual_parameters=[
             openapi.Parameter(

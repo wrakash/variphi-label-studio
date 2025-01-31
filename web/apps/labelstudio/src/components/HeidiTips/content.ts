@@ -64,7 +64,7 @@ export const defaultTipsCollection: TipsCollection = {
       closable: true,
       link: {
         label: "Learn more",
-        url: "https://labelstud.io/guide/setup",
+        url: "",
         params: {
           experiment: "project_creation_tip",
           treatment: "templates",
@@ -78,7 +78,7 @@ export const defaultTipsCollection: TipsCollection = {
       closable: true,
       link: {
         label: "Explore templates",
-        url: "https://labelstud.io/templates/gallery_generative_ai",
+        url: "",
         params: {
           experiment: "project_creation_tip",
           treatment: "genai_templates",
@@ -162,7 +162,7 @@ export const defaultTipsCollection: TipsCollection = {
       closable: true,
       link: {
         label: "Check out the integrations directory",
-        url: "https://labelstud.io/integrations/",
+        url: "",
         params: {
           experiment: "organization_page_tip",
           treatment: "integration_points",
@@ -245,7 +245,7 @@ export const defaultTipsCollection: TipsCollection = {
       closable: true,
       link: {
         label: "Learn more",
-        url: "https://labelstud.io/guide/ml",
+        url: "",
         params: {
           experiment: "project_settings_tip",
           treatment: "connect_ml_models",

@@ -5,9 +5,9 @@
     "data annotation",
     "data labeling"
   ],
-  "website": "https://labelstud.io",
-  "repository": "https://github.com/HumanSignal/label-studio",
-  "logo": "https://raw.githubusercontent.com/HumanSignal/label-studio/refs/heads/develop/images/heartex_icon_opossum_green.svg",
+  "website": "variphi.com",
+  "repository": "https://github.com/VariPhiGen/variphi-label-studio.git",
+  "logo": "",
   "stack": "container",
   "env": {
     "DISABLE_SIGNUP_WITHOUT_LINK": {

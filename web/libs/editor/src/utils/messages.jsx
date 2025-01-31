@@ -1,7 +1,7 @@
 import { htmlEscape } from "./html";
 
-const URL_CORS_DOCS = "https://labelstud.io/guide/storage.html#Troubleshoot-CORS-and-access-problems";
-const URL_TAGS_DOCS = "https://labelstud.io/tags";
+const URL_CORS_DOCS = "";
+const URL_TAGS_DOCS = "";
 
 export default {
   DONE: "Done!",

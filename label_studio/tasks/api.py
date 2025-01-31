@@ -125,7 +125,6 @@ logger = logging.getLogger(__name__)
                 'for more details about filters, selectedItems and ordering.\n\n'
                 '* **filters**: dict with `"conjunction"` string (`"or"` or `"and"`) and list of filters in `"items"` array. '
                 'Each filter is a dictionary with keys: `"filter"`, `"operator"`, `"type"`, `"value"`. '
-                '[Read more about available filters](https://labelstud.io/sdk/data_manager.html)<br/>'
                 '                   Example: `{"conjunction": "or", "items": [{"filter": "filter:tasks:completed_at", "operator": "greater", "type": "Datetime", "value": "2021-01-01T00:00:00.000Z"}]}`\n'
                 '* **selectedItems**: dictionary with keys: `"all"`, `"included"`, `"excluded"`. If "all" is `false`, `"included"` must be used. If "all" is `true`, `"excluded"` must be used.<br/>'
                 '                   Examples: `{"all": false, "included": [1, 2, 3]}` or `{"all": true, "excluded": [4, 5]}`\n'

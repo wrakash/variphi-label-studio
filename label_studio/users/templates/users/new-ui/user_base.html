@@ -9,20 +9,23 @@
   href="{{ settings.HOSTNAME }}{% static 'css/login.css' %}"
 />
 
-<script
+<!-- <script
   async
   src="https://www.googletagmanager.com/gtag/js?id=UA-129877673-1"
   nonce="{{request.csp_nonce}}"
-></script>
-<script nonce="{{request.csp_nonce}}">
+></script> -->
+
+<!-- <script nonce="{{request.csp_nonce}}">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
   }
   gtag("js", new Date());
   gtag("config", "UA-129877673-1");
-</script>
-{% endblock %} {% block content %}
+</script> -->
+
+
+<!-- {% endblock %} {% block content %}
 <script nonce="{{request.csp_nonce}}">
   window.APP_SETTINGS = window.APP_SETTINGS ?? {};
   window.APP_SETTINGS.collect_analytics = {{ settings.COLLECT_ANALYTICS|yesno:"true,false" }};
@@ -58,9 +61,9 @@
   if (!window.__lsa) {
     window.__lsa = logEvent;
   }
-</script>
+</script> -->
 
-<script nonce="{{request.csp_nonce}}">
+<!-- <script nonce="{{request.csp_nonce}}">
   const gaClientIdTrackingIframe = (event) => {
     if (!window.APP_SETTINGS?.collect_analytics) return;
 
@@ -76,7 +79,7 @@
     iframe.style.visibility = "hidden";
     document.body.appendChild(iframe);
   };
-</script>
+</script> -->
 
 <div class="login_page_new_ui">
   <div class="center">

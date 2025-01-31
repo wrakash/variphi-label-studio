@@ -113,9 +113,9 @@ export const MachineLearningSettings = () => {
               <div>
                 Need help?
                 <br />
-                <a href="https://labelstud.io/guide/ml" target="_blank" rel="noreferrer">
+                {/* <a href="https://labelstud.io/guide/ml" target="_blank" rel="noreferrer">
                   Learn more about connecting models in our docs
-                </a>
+                </a> */}
               </div>
             }
           />

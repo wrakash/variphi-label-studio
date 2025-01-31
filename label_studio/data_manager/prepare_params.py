@@ -268,7 +268,6 @@ filters_schema = openapi.Schema(
     required=['conjunction', 'items'],
     description=(
         'Filters to apply on tasks. '
-        'You can use [the helper class `Filters` from this page](https://labelstud.io/sdk/data_manager.html) '
         'to create Data Manager Filters.<br>'
         'Example: `{"conjunction": "or", "items": [{"filter": "filter:tasks:completed_at", "operator": "greater", '
         '"type": "Datetime", "value": "2021-01-01T00:00:00.000Z"}]}`'
