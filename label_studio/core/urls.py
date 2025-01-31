@@ -31,7 +31,7 @@ handler500 = 'core.views.custom_500'
 
 versions = collect_versions()
 open_api_info = openapi.Info(
-    title='Label Studio API',
+    title='Variphi Annotation Studio API',
     default_version='v' + versions['release'],
     contact=openapi.Contact(url='https://labelstud.io'),
     x_logo={'url': '../../static/icons/favicon.png'},
