@@ -144,8 +144,11 @@ RUN --mount=type=cache,target="/var/cache/apt",sharing=locked \
     apt-get autoremove -y
 
 RUN set -eux; \
-    mkdir -p $LS_DIR $LABEL_STUDIO_BASE_DATA_DIR $OPT_DIR && \
-    chown -R 1001:0 $LS_DIR $LABEL_STUDIO_BASE_DATA_DIR $OPT_DIR /var/log/nginx /etc/nginx
+    mkdir -p $LS_DIR $LABEL_STUDIO_BASE_DATA_DIR $OPT_DIR; \
+    mkdir -p /label-studio/data/media; \
+    chown -R 1001:0 $LS_DIR $LABEL_STUDIO_BASE_DATA_DIR $OPT_DIR /var/log/nginx /etc/nginx; \
+    chown -R 1001:0 /label-studio/data/media; \
+    chmod -R 755 /label-studio/data/media
 
 COPY --chown=1001:0 deploy/default.conf /etc/nginx/nginx.conf
 
